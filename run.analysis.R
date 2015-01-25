@@ -1,4 +1,5 @@
 run.analysis <- function() {
+        library(dplyr)
         nameSet <- c("train", "test")
         fileSet <- c("subject_", "y_", "X_")
         fullData <- NULL
@@ -49,7 +50,7 @@ run.analysis <- function() {
         ## Summarize the data
         groupedData <- group_by(fullData, subject, activity)
         summarizedData <- summarise_each(groupedData, funs(mean))
-
+        detach("package:dplyr")
         return(summarizedData)
 }
 
