@@ -2,6 +2,8 @@
 
 The script contained in this repository is used to clean the dataset "Human Activity Recognition Using Smartphones"
 
+The script must be deployed in the "UCI HAR Dataset" folder
+
 The run.analysis function leverages the dplyr package to summarize the data contained within both the "train" and "test" directories
 
 There are two primary outputs of this script
